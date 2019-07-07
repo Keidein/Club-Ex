@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Club Ex</title>
+        <script type="text/javascript" src="./scripts/login.js"></script>
+        <link rel="stylesheet" type="text/css" href="./styles/LoginStyle.css"/>
+    </head>
+
+    <body>
+        <div id="signupDiv">
+            <form onsubmit="createLogin();return false">
+                <div>USERNAME <br/><input id="username"/><span id="username-error">Error with the username</span></div>
+                <br/>
+                <br/>
+                <div>PASSWORD <br/><input id="password" type="password"/><span id="password-error">Error with the password</span></div>
+                <br/>
+                <br/>
+                <div>EMAIL <br/><input id="email"/><span id="email-error">Error with the email</span></div>
+                <br/>
+                <button>SIGN UP</button>
+
+                <br/>
+                <br/>
+                <br/>
+
+                <div>
+                    <input type="radio" id="10fee" value="$10" name="subscription"/>
+                    <label for="10fee">$10 Subscription</label>
+                </div>
+                <div>
+                    <input type="radio" id="100fee" value="$100" name="subscription"/>
+                    <label for="100fee">$100 Subscription</label>
+                </div>
+            </form>
+            <a href="./login-page.html">Have an account? Log in here...</a>
+        </div>
+    </body>
+</html>

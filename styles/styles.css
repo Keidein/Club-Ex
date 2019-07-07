@@ -1,0 +1,113 @@
+/* Grouping Style */
+
+.scrolling-wrapper {
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+	width: 800px;
+	margin: 0 auto;
+
+	position: relative;
+	top: 150px;
+}
+
+.card {
+    display: inline-block;
+}
+
+/* Search Bar Style */
+
+h1 {
+    text-align: center;
+}
+
+.search-bar {
+    margin:0;
+    padding: 0;
+}
+
+.search-bar{
+    position: fixed;
+    display: inline-block;
+    width: 95%;
+    max-width: 344px;
+    height: 48px;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+input{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 40px;
+    left: 172px;
+    margin: 4px 0;
+    border: 0;
+    border-radius: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+ul#wrapper{
+	list-style: none;
+	position: inherit;
+}
+
+a{
+    font-size: 24px;
+    color: black;
+    line-height: 100px;
+    font-family: monospace;
+    text-decoration: none;
+}
+/* Login & Signup Style */
+
+span {
+    color: red;
+    font-size: 15px;
+
+    visibility: hidden;
+}
+
+input {
+    padding: 5px;
+    width: 95%;
+}
+
+button {
+    color: white;
+    background: black;
+
+    width: 130px;
+
+    padding: 10px;
+    border-radius: 5px;
+    border-color: black;
+}
+
+#signupDiv, #loginDiv {
+    margin: auto;
+
+    width: 350px;
+    height: 350px;
+
+    padding: 15px;
+
+    border: solid black 3px;
+
+    background-color: lightgrey;
+}
+
+#signupDiv div, #loginDiv div {
+    font-weight: bold;
+}
+
+#signupDiv a, #loginDiv a {
+    text-align: center;
+}
