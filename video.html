@@ -4,30 +4,41 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="username" content="$user.username">
-        <meta name="context-path" content="$contextPath">
         <script type="text/javascript" src="./scripts/index.js"></script>
         <script type="text/javascript" src="./scripts/ratings.js"></script>
         <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+        <!-- for like/dislike icons-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
         <!-- ADD A VIDEO NAME-->
         <title>Video Name</title>
     </head>
 
     <body>
-        <!-- ADD A VIDEO NAME-->
-        <h1>Video Name</h1>
+        <h1>Club Ex</h1>
 
-        <!-- VIDEO PLACEHOLDER-->
-        <image src="media/images/yoga-group.jpg" />
+        <div class="current_video">
+            <!-- VIDEO PLACEHOLDER-->
+            <image src="media/images/yoga-group.jpg"/>
+            <!-- ADD A VIDEO NAME-->
+            <h2 id="video_title">Video Name</h2>
+        </div>
 
-        <!-- VIEWS --> 
-        <!-- LIKE BTN --> <!-- NUMBER OF LIKES -->
-        <button type="button" class="ratings_btn" onClick="likeVideo()">Like</button>
-        <p>Likes: <a id="likes">0</a></p>
+        <div class="current_rating">
+            <!-- VIEWS --> 
+            <p id="views">xxx xx views</p>
+            <div class="ratings_btns">
+                <!-- LIKE BTN & NUMBER OF LIKES -->
+                <button type="button" class="ratings_btn" id="likeBtn" onClick="likeVideo()">
+                    <i class="far fa-thumbs-up"></i>
+                    <a id="likes">0</a></i>
+                </button> 
+                <!-- DISLIKE BTN & NUMBER OF DISLIKES -->
+                <button type="button" class="ratings_btn" id="dislikeBtn" onClick="dislikeVideo()">
+                    <i class="far fa-thumbs-down"></i>
+                    <a id="dislikes">0</a>
+                </button>
+            </div>
+        </div>
 
-        <!-- DISLIKE BTN --> <!-- NUMBER OF DISLIKES -->
-        <button type="button" class="ratings_btn" onClick="dislikeVideo()">Dislike</button>
-        <p>Dislikes: <a id="dislikes">0</a></p>
-        
     </body>
 </html>
