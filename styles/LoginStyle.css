@@ -1,11 +1,11 @@
-span {
+#username-error, #password-error, #email-error {
     color: red;
     font-size: 15px;
 
     visibility: hidden;
 }
 
-input {
+#username, #password, #email {
     padding: 5px;
     width: 95%;
 }
@@ -40,4 +40,32 @@ button {
 
 #signupDiv a, #loginDiv a {
     text-align: center;
+}
+
+#subscriptions {
+    display: inline-block;
+    background-color: lightgray;
+    border: solid black 3px;
+
+    padding: 15px;
+
+    vertical-align: middle;
+    line-height: 1.5em;
+}
+
+#subscriptions div {
+    width: 350px;
+    padding: 5px;
+}
+
+#fee100 {
+    display: inline-block;
+}
+
+label {
+    white-space: nowrap;
+}
+
+.label-wrapper {
+    white-space: normal;
 }
