@@ -1,6 +1,4 @@
 
-
-
 // COOKIES
 
 function setLike(articleID) {
@@ -37,8 +35,12 @@ function likeVideo() {
     }
 }
 
-var dislikes = 0;
-    function dislikeVideo() {
-        dislikes += 1;
+
+function dislikeVideo() {
+    var dislikes = 0;
+    likedVideo();
+    if (hasLiked != true) {
+        dislikes ++;
         document.getElementById("dislikes").innerHTML = dislikes;
     }
+}
