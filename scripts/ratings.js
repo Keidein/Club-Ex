@@ -1,6 +1,4 @@
-
 // COOKIES
-
 function setLike(articleID) {
     document.cookie=articleID;
 }
@@ -14,7 +12,6 @@ function hasLiked(articleID) {
     return false;
 }
 
-var button=document.getElementById('likeBtn');
 
 function likedVideo() {
     var articleID='articleID';
@@ -26,21 +23,23 @@ function likedVideo() {
 }
 
 
+var voted = false;
 function likeVideo() {
     var likes = 0;
     likedVideo();
-    if (hasLiked != true) {
-        likes ++;
+    if ((hasLiked != true) && (voted !=true)) {
+        likes += 1;
         document.getElementById("likes").innerHTML = likes;
+        voted = true;
     }
 }
-
 
 function dislikeVideo() {
     var dislikes = 0;
     likedVideo();
-    if (hasLiked != true) {
-        dislikes ++;
+    if ((hasLiked != true) && (voted !=true)) {
+        dislikes += 1;
         document.getElementById("dislikes").innerHTML = dislikes;
+        voted = true;
     }
 }
