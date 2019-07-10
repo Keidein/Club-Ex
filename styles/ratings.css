@@ -54,3 +54,11 @@
     margin-right: auto;
     width: 50%;
 }
+
+.stats_link{
+    font-size: 12px;
+    padding-right: 60px;
+    float: right;
+    line-height: 18px;
+    color: #fb3640;
+}
