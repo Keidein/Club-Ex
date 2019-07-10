@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Club Ex</title>
+        <script type="text/javascript" src="./scripts/login.js"></script>
+        <link rel="stylesheet" type="text/css" href="./styles/LoginStyle.css"/>
+    </head>
+
+    <body>
+        <div id="signupDiv">
+            <form onsubmit="createLogin();return false">
+                <div>USERNAME <br/><input id="username"/><span id="username-error">Error with the username</span></div>
+                <br/>
+                <br/>
+                <div>PASSWORD <br/><input id="password" type="password"/><span id="password-error">Error with the password</span></div>
+                <br/>
+                <br/>
+                <div>EMAIL <br/><input id="email"/><span id="email-error">Error with the email</span></div>
+                <br/>
+                <button>SIGN UP</button>
+            </form>
+            <a href="./login-page.html">Have an account? Log in here...</a>
+        </div>
+
+        <br/>
+        <br/>
+
+        <div id="subscriptions">
+            <div id="fee10">
+                <span>
+                    <h2>Want to try out our online content?</h2>
+
+                    Try out our content with this $10 subscription fee,
+                    which grants access to view all our videos that we have available.
+                </span>
+                <br/>
+                <input type="radio" id="fee10" value="$10" name="subscription"/>
+                <span>$10 Subscription</span>
+            </div>
+            <br/>
+            <div id=fee100>
+                <span>
+                    <h2>Want to be a full member for a whole year?</h2>
+
+                    Have you already given our $10 subscription a try?
+                    If you would like a full year to continuously see
+                    and do all of our workouts then this is for you!
+                </span>
+                <br/>
+                <input type="radio" id="fee100" value="$100" name="subscription"/>
+                <span>$100 Subscription</span>
+            </div>
+        </div>
+    </body>
+</html>
