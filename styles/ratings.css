@@ -1,0 +1,56 @@
+/* Ratings Styling */
+.ratings_btn {
+    color: gray;
+    background: white;
+    padding: 3px;
+    padding-top: 6px;
+    width: auto;
+    border-radius: 5px;
+    border-color: black;
+}
+.ratings_btn a{
+    line-height: 0px;
+}
+
+.ratings_text{
+    font-size: 16px;
+    color: black;
+}
+
+.ratings_text a{
+    font-size: 18px;
+}
+
+.current_rating p{
+    width: 90px;
+}
+
+.ratings_btns{
+    padding-left: 40px;
+}
+
+.current_rating p, .ratings_btns{
+    display: inline;
+}
+
+/* change to video */
+.current_video image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.current_video{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+ .current_rating{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
