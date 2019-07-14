@@ -43,24 +43,19 @@ button {
 }
 
 #subscriptions {
-    display: inline-block;
+
     background-color: lightgray;
     border: solid black 3px;
 
     padding: 15px;
 
-    vertical-align: middle;
     line-height: 1.5em;
-}
 
-#subscriptions div {
     width: 350px;
-    padding: 5px;
+    padding: 10px;
+    margin: auto;
 }
 
-#fee100 {
-    display: inline-block;
-}
 
 label {
     white-space: nowrap;
@@ -68,4 +63,11 @@ label {
 
 .label-wrapper {
     white-space: normal;
+}
+
+/* Login & Signup Style */
+
+input {
+    padding: 5px;
+    width: 95%;
 }
