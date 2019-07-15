@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="./scripts/index.js"></script>
+        <script type="text/javascript" src="./scripts/ratings.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles/ratings.css"/>
+        <!-- Header styling -->
+        <link rel="stylesheet" type="text/css" href="styles/general.css"/>
+        <!-- for like/dislike icons-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <!-- ADD A VIDEO NAME-->
+        <title>Video Name</title>
+    </head>
+
+    <body>
+        <h1>Club Ex</h1>
+
+        <div class="current_video">
+            <!-- VIDEO PLACEHOLDER-->
+            <img src="media/images/yoga-group.jpg"/>
+            <a href="./stats.html" class="stats_link">Video Stats</a>
+            <!-- ADD A VIDEO NAME-->
+            <h2 id="video_title">Video Name</h2>
+        </div>
+
+        <div class="current_rating">
+            <!-- VIEWS --> 
+            <p id="views">xxx xx views</p>
+            <div class="ratings_btns">
+                <!-- LIKE BTN & NUMBER OF LIKES -->
+                <button type="button" class="ratings_btn" id="likeBtn" articleID="123456789" onclick=likeVideo()>
+                    <i class="far fa-thumbs-up"></i>
+                    <a id="likes">0</a>
+                </button> 
+                <!-- DISLIKE BTN & NUMBER OF DISLIKES -->
+                <button type="button" class="ratings_btn" id="dislikeBtn" articleID="234567891" onClick=dislikeVideo()>
+                    <i class="far fa-thumbs-down"></i>
+                    <a id="dislikes">0</a>
+                </button>
+            </div>
+        </div>
+        
+
+    </body>
+</html>
