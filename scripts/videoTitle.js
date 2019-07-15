@@ -14,5 +14,8 @@ function assignNewName(){
   console.log(newName);
 
   document.getElementById("video_title").innerHTML = newName;
+
+  //  PAGE TAB TITLE
+  document.getElementById("videoPage_title").innerHTML = newName;
 }
 
