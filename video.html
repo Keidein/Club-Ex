@@ -4,17 +4,19 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <script type="text/javascript" src="./scripts/videoViews.js"></script>
         <script src="./scripts/jquery.min.js"></script>
         <script type="text/javascript" src="./scripts/videoTitle.js"></script>
         <script type="text/javascript" src="./scripts/ratings.js"></script>
+
         <link rel="stylesheet" type="text/css" href="styles/ratings.css"/>
         <!-- Header styling -->
         <link rel="stylesheet" type="text/css" href="styles/general.css"/>
         <!-- for like/dislike icons-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
         <!-- ADD A VIDEO NAME-->
-        <title>Video Name</title>
+        <title id="videoPage_title">Video Name</title>
     </head>
 
     <body onload="assignNewName()">
@@ -26,10 +28,11 @@
                  Your browser does not support the video tag.
             </video>
 
+            <!-- VIDEO STATS LINK --> 
             <a href="./stats.html" class="stats_link">Video Stats</a>
-            
-            <!-- ADD A VIDEO NAME-->
-            <p id="video_title"> HI </p>
+
+            <!-- VIDEO TITLE --> 
+            <p id="video_title">Video Name</p>
         </div>
 
         <div class="current_rating">
@@ -42,14 +45,15 @@
                     <i class="far fa-thumbs-up"></i>
                     <a id="likes">0</a>
                 </button> 
+                
                 <!-- DISLIKE BTN & NUMBER OF DISLIKES -->
                 <button type="button" class="ratings_btn" id="dislikeBtn" articleID="234567891" onClick=dislikeVideo()>
                     <i class="far fa-thumbs-down"></i>
                     <a id="dislikes">0</a>
                 </button>
+
             </div>
         </div>
-        
 
     </body>
 </html>
