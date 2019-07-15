@@ -4,7 +4,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script type="text/javascript" src="./scripts/index.js"></script>
+        <script type="text/javascript" src="./scripts/videoViews.js"></script>
+        <script src="./scripts/jquery.min.js"></script>
+        <script type="text/javascript" src="./scripts/videoTitle.js"></script>
         <script type="text/javascript" src="./scripts/ratings.js"></script>
         <link rel="stylesheet" type="text/css" href="styles/ratings.css"/>
         <!-- Header styling -->
@@ -15,20 +17,25 @@
         <title>Video Name</title>
     </head>
 
-    <body>
+    <body onload="assignNewName()">
         <h1>Club Ex</h1>
 
         <div class="current_video">
-            <!-- VIDEO PLACEHOLDER-->
-            <img src="media/images/yoga-group.jpg"/>
+            <video class="video" controls onplay="viewCounter()">
+                <source src="media/videos/yoga.mp4" type="video/mp4">
+                 Your browser does not support the video tag.
+            </video>
+
             <a href="./stats.html" class="stats_link">Video Stats</a>
+            
             <!-- ADD A VIDEO NAME-->
-            <h2 id="video_title">Video Name</h2>
+            <p id="video_title"> HI </p>
         </div>
 
         <div class="current_rating">
             <!-- VIEWS --> 
-            <p id="views">xxx xx views</p>
+            <p class="video-views"> This video has been viewed <a id="viewNumber">0</a> times. </p>
+
             <div class="ratings_btns">
                 <!-- LIKE BTN & NUMBER OF LIKES -->
                 <button type="button" class="ratings_btn" id="likeBtn" articleID="123456789" onclick=likeVideo()>
