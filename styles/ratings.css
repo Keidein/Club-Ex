@@ -34,18 +34,19 @@
 }
 
 /* change to video */
-.current_video image{
-    display: block;
+.current_video video{
+    width: 1252px;
+    height: 704px;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    display: block;
 }
 
 .current_video{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 60%;
 }
 
  .current_rating{

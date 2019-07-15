@@ -1,49 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title>Club Ex</title>
         <script type="text/javascript" src="./scripts/index.js"></script>
+        <script type="text/javascript" src="./scripts/videoTitle.js"></script>
         <script src="./scripts/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="styles/grouping.css"/>
-        <div class="search-bar">
-            <input type="text" name="search" value="" autocomplete="off" id="myinput" onkeyup="searchFunction()" placeholder="Search">
-        </div>
+            <div class="search-bar">
+                <input type="text" name="search" value="" autocomplete="off" id="myinput" onkeyup="searchFunction()" placeholder="Search">
+            </div>
     </head>
 
     <body>
-
-        <header>
-            <h1></h1>
-        </header>
-
         <ul id="wrapper">
             <li>
-                <a href="#">
-                    <div class="scrolling-wrapper row1">
-                        <div class="card">
-                            <image src="media/images/yoga-group.jpg" />
-                            </div>
-                        <div class="card">
-                            <iframe width="320" height="250" src="https://www.youtube.com/embed/aKsu112bzHE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>            
-                        <div class="card">
-                            <iframe width="320" height="250" src="https://www.youtube.com/embed/HtSSMx-LbQ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="card">
-                            <iframe width="320" height="250" src="https://www.youtube.com/embed/oBu-pQG6sTY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
+                <div class="scrolling-wrapper row1">
+                    <div class="card">
+                        <img src="media/images/yoga-group.jpg" />
                     </div>
-                </a>
+                    <div class="card">
+                        <a href="video.html"  >
+                            <img src="media/images/icon_yoga1.PNG" width="320" height="250" id="vidYoga1" title="Yoga for Tension Relief" onclick="getVideoName(this.id)"/>
+                        </a>
+                    </div>            
+                    <div class="card">
+                        <a href="video.html"  >
+                            <img src="media/images/icon_yoga1.PNG" width="320" height="250" id="vidYoga2" title="Yoga for " onclick="getVideoName(this.id)"/>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <iframe width="320" height="250" src="https://www.youtube.com/embed/oBu-pQG6sTY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
             </li>
 
             <li>
                 <a href="#">
                     <div class="scrolling-wrapper row2">
                         <div class="card">
-                            <image  src="media/images/aerobics-group.png" />
+                            <img  src="media/images/aerobics-group.png" />
                         </div>
                         <div class="card">
                             <iframe width="320" height="250" src="https://www.youtube.com/embed/-n-Ao6I2BzA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -62,7 +60,7 @@
                 <a href="#">
                     <div class="scrolling-wrapper row3">
                         <div class="card">
-                            <image src="media/images/pilaties-group.png" />
+                            <img src="media/images/pilaties-group.png" />
                         </div>
                         <div class="card">
                             <iframe width="320" height="250" src="https://www.youtube.com/embed/K-PpDkbcNGo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -81,7 +79,7 @@
                 <a href="#">
                     <div class="scrolling-wrapper row4">
                         <div class="card">
-                            <image src="media/images/boxing-group.png" />
+                            <img src="media/images/boxing-group.png" />
                         </div>
                         <div class="card">
                             <iframe width="320" height="250" src="https://www.youtube.com/embed/LjeJmHg_S4A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -96,6 +94,5 @@
                 </a>
             </li>
         </ul>
-
     </body>
 </html>
