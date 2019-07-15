@@ -11,8 +11,7 @@
         <script type="text/javascript" src="./scripts/ratings.js"></script>
 
         <link rel="stylesheet" type="text/css" href="styles/ratings.css"/>
-        <!-- Header styling -->
-        <link rel="stylesheet" type="text/css" href="styles/general.css"/>
+
         <!-- for like/dislike icons-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
         <!-- ADD A VIDEO NAME-->
@@ -20,16 +19,22 @@
     </head>
 
     <body onload="assignNewName()">
-        <h1>Club Ex</h1>
+        <div id="container">
+            <header>
+                <h1> CLUB EX </h1>        
+            </header>
+        </div>
 
         <div class="current_video">
             <video class="video" controls onplay="viewCounter()">
                 <source src="media/videos/yoga.mp4" type="video/mp4">
-                 Your browser does not support the video tag.
+                Your browser does not support the video tag.
             </video>
 
-            <!-- VIDEO STATS LINK --> 
-            <a href="./stats.html" class="stats_link">Video Stats</a>
+            <!-- VIDEO STATS BUTTON --> 
+            <button id="stats_btn">
+                <a href="./stats.html">Video Stats</a>
+            </button>
 
             <!-- VIDEO TITLE --> 
             <p id="video_title">Video Name</p>
@@ -37,7 +42,7 @@
 
         <div class="current_rating">
             <!-- VIEWS --> 
-            <p class="video-views"> This video has been viewed <a id="viewNumber">0</a> times. </p>
+            <p class="video-views"> This video has been viewed <a id="viewNumber"><b>0</b></a> times. </p>
 
             <div class="ratings_btns">
                 <!-- LIKE BTN & NUMBER OF LIKES -->
@@ -54,6 +59,5 @@
 
             </div>
         </div>
-
     </body>
 </html>
