@@ -1,0 +1,106 @@
+/* FULL PAGE CSS */
+
+#container {
+    width:950px;
+    background-color: #fff;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER STYLE */
+
+header {
+    width: 100%;
+    height: 115px;
+    background-color: #0a2463;
+    margin: 0;
+    color: #ffffff;
+}
+
+header h1 {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 100px;
+    margin-left: 20px;
+}
+
+/* ERROR STYLING */
+
+#username-error, #password-error, #email-error {
+    color: red;
+    font-size: 15px;
+
+    visibility: hidden;
+}
+
+/* FORM STYLING */
+
+#loginDiv {
+    height: 350px;
+    width: 450px;
+    margin: 0 auto;
+    margin-top: 100px;
+
+    box-shadow: 0 30px 40px rgba(0,0,0,.3);
+    
+}
+
+.form-wrapper {
+    height: 80%;
+    width:100%;
+    background-color: white;
+}
+
+.form-wrapper h4 {
+
+    position: relative;
+    top: 30px;
+
+    text-align: center;
+}
+
+.form-wrapper input {
+    position: relative;
+    left: 30px;
+    top: 35px;
+
+    height: 35px;
+    width: 85%;
+    border: none;
+
+    text-align: center;
+
+    background-color: #F8F8F8;
+    border: 3px solid #F0F0F0;
+    border-radius: 15px;
+}
+
+.form-wrapper button {
+    position: relative;
+    top: 60px;
+    left: 12%;
+
+    background-color: #247BA0;
+    border: 3px solid white;
+    border-radius: 15px;
+
+    color: white;
+    font-size: 18px;
+
+    padding: 10px 20px;
+}
+
+/* SIGN UP LINK STYLING */
+
+#sign-up-link-wrapper {
+    height:20%;
+    width:100%;
+    background-color: #e2e2e2;
+}
+
+#sign-up-link-wrapper a {
+    color: #B0B0B0;
+    top: 20px;
+    position: relative;
+    left: 85px;
+}
