@@ -1,8 +1,8 @@
 $(document).ready(() => {
     setTimeout(() => {
         var li = document.getElementsByTagName("li"),
-    wrapper = document.getElementById("wrapper"),
-    newSort = [];
+        wrapper = document.getElementById("wrapper"),
+        newSort = [];
 
     for (let i = 0; i < li.length-1; i++) {
 
@@ -20,9 +20,6 @@ $(document).ready(() => {
             }
         }
     }
-
-    console.log(li, newSort);
-
     list = li.length;
 
     if (list > 0) {
@@ -31,8 +28,6 @@ $(document).ready(() => {
             li[0].remove();
         }
     }
-
-    console.log(li, newSort);
 
     for (let i = 0; i < newSort.length; i++) {
         wrapper.innerHTML = wrapper.innerHTML + newSort[i].outerHTML;
