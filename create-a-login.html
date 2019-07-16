@@ -10,54 +10,59 @@
     </head>
 
     <body>
+
         <div id="container">
+
+                <header>
+                    <h1> CLUB EX </h1>          
+                </header>
+
             <div id="signupDiv">
-                <div class="form-wrapper">
+                <div class="sign-form-wrapper">
                     <form onsubmit="createLogin();return false">
-                        <h4> Signup </h4>
-                        <input id="username" placeholder="username"/><span id="username-error">Error with the username</span>
-                        <input id="password" type="password" placeholder="password"/><span id="password-error">Error with the password</span>
-                        <input id="email" placeholder="email"/><span id="email-error">Error with the email</span>
-                        <button>SUBMIT</button>
+                        <h4> Sign Up </h4>
+                        <input id="username" placeholder="username"/>
+                        <input id="password" type="password" placeholder="password"/>
+                        <input id="email" placeholder="email address"/>
+                        <button>SIGN UP</button>
                     </form>
-                </div>
-                    <div id="login-link-wrapper">
+
+                    <div id="log-link-div">    
                         <a href="./login-page.html">Have an account? Log in here...</a>
                     </div>
+                </div>
+
             </div>
-        
 
-            <br/>
-            <br/>
 
-            <div id="subscriptions_box">
-                <div id="subscriptions">
+            <div id="subscriptions">
+                <div id="subscribe-wrapper">
                     <div id="fee10">
                         <span>
                             <h2>Want to try out our online content?</h2>
 
-                            Try out our content with this $10 subscription fee,
-                            which grants access to view all our videos that we have available.
+                            <p>Try out our content with this $10 subscription fee,
+                            which grants access to view all our videos that we have available.</p>
                         </span>
-                        <br/>
                         <input type="radio" id="fee10" value="$10" name="subscription"/>
-                        <span>$10 Subscription</span>
+                        <h5>$10 Subscription</h5>
                     </div>
-                    <br/>
                     <div id=fee100>
                         <span>
                             <h2>Want to be a full member for a whole year?</h2>
 
-                            Have you already given our $10 subscription a try?
+                            <p>Have you already given our $10 subscription a try?
                             If you would like a full year to continuously see
-                            and do all of our workouts then this is for you!
+                            and do all of our workouts then this is for you!</p>
                         </span>
-                        <br/>
                         <input type="radio" id="fee100" value="$100" name="subscription"/>
-                        <span>$100 Subscription</span>
+                        <h5>$100 Subscription</h5>
                     </div>
                 </div>
             </div>
+
+
         </div>
+        </body>
     </body>
 </html>
