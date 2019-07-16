@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Club Ex</title>
+        <script type="text/javascript" src="./scripts/login.js"></script>
+        <link rel="stylesheet" type="text/css" href="./styles/LoginStyle.css"/>
+    </head>
+
+    <body>
+    <div id="container">
+
+        <header>
+                <h1> CLUB EX </h1>               
+        </header>
+    
+
+        <div id="loginDiv">
+
+            <div class="form-wrapper">
+                <form onsubmit="login();return false">
+                    <h4> Login </h4>
+                    <input id="username" placeholder="username"/><span id="username-error">Error with the username</span>
+                    <input id="password" type="password" placeholder="password"/><span id="password-error">Error with the password</span>
+                    <button>LOG IN</button>
+                </form>
+            </div>
+
+            <div id="sign-up-link-wrapper">
+                <a href="./create-a-login.html">Don&#39t have an account? Signup here...</a>
+            </div>
+        
+
+        </div>
+
+    </div>
+    </body>
+</html>
