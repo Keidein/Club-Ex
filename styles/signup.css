@@ -1,4 +1,4 @@
-/*  LOGIN ATYLE */
+/*  SIGNUP ATYLE */
 #container {
     width:950px;
     background-color: #fff;
@@ -22,9 +22,8 @@ header h1 {
     margin-left: 20px;
 }
 
-
 /* ERROR STYLING */
-#username-error, #password-error {
+#username-error, #password-error, #email-error {
     color: red;
     font-size: 15px;
 
@@ -46,24 +45,35 @@ header h1 {
     padding: 10px 20px;
 }
 
-#signupDiv, #loginDiv {
-    height: 350px;
+#signupDiv {
+    height: 450px;
     width: 450px;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 80px;
 
     box-shadow: 0 30px 40px rgba(0,0,0,.3);
-    
 }
 
-.form-wrapper {
+#subscriptions_box{
+    height: 300px;
+    width: 450px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 15px;
+    box-shadow: 0 30px 40px rgba(0,0,0,.3);
+}
+
+#subscriptions_box span{
+    font-size: 14px;
+}
+
+.form-wrapper, #subscriptions {
     height: 80%;
     width:100%;
     background-color: white;
 }
 
 .form-wrapper h4 {
-
     position: relative;
     top: 30px;
 
@@ -87,15 +97,33 @@ header h1 {
 }
 
 
+#signupDiv div {
+    font-weight: bold;
+}
+
+#signupDiv a {
+    text-align: center;
+}
+
+
+
+/* Login & Signup Style */
+
+input {
+    padding: 5px;
+    width: 95%;
+}
+
+
 
 /* SIGN UP LINK STYLING */
 
-#sign-up-link-wrapper {
+#login-link-wrapper {
     height:20%;
     width:100%;
     background-color: #e2e2e2;
 }
 
-#sign-up-link-wrapper a {
+#login-link-wrapper a {
     color: #B0B0B0;
 }
