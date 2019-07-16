@@ -5,66 +5,62 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script type="text/javascript" src="./index.js"></script>
-        <link rel="stylesheet" type="text/css" href="styles/landingpage.css"/>
-        <link rel="stylesheet" type="text/css" href="./styles/general.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/landingPage.css"/>
         <title>Club Ex</title>
     </head>
 
     <body>
-        <h1>Club Ex</h1>
 
-        <div class="intro_box">
-            <img src="media/images/gym_homepage.jpg" width="320" height="250" style="display: inline-block">
-            <h2>NZ's largest gym!</h2>
-            <p><b>What makes us different?</b> <br>
-            Offering a unique high quality workout session videos, to view whereever you are. Workout at the office, at home, anywhere!</p>
+        <div id="container">
+            <header>
+                <h1> CLUB EX </h1>        
+                       
+            </header>
+
+            <section id="introduction">
+                <div id="intro-image-wrapper">
+                    <img src="media/images/intro-image.png" height="200px" width="400px">
+                </div>
+                <div id="intro-blurb">
+                    <h3> Welcome to Club Ex </h3>
+                    <P> Club Ex is one of Wellington's premier gyms. With a wide array of services, what makes us stand out from the crowd is our ability to allow you to get the perfect workout, anywhere, at any time. Even from the comfort of your own home! </P>
+                    <a href="login-page.html"><button>Log In</button></a>
+                </div>
+            </section>
+
+            <section id="feature-section">
+                <div id="feature-wrapper">
+                    <image id="feature-image" src="media/images/weight-icon2.png"></image>
+                    <h2> CLUB EX SERVICES </h2>
+                    <p> We have a wide array of services here at Club Ex. These include three fully staffed and equipped high quality locations. We also have various personal trainers and classes for the following exersize routines: Boxing, Aerobics, Pilaties, and Yoga. </p>
+                </div>
+            </section>
+
+            <section id="price-section">
+                <div id="table-wrapper">
+                    <div class="class-table monthly">
+                        <h4> Monthly Option </h4>
+                        <ul>
+                            <li> This is our monthly option. </li>
+                            <li> Access our services for a month. </li>
+                            <li class="end-item"> $10 </li>
+                        </ul>
+                    </div>
+
+                    <div class="class-table yearly">
+                        <h4> Yearly Option </h4>
+                        <ul>
+                            <li> Our long term option. </li>
+                            <li> Access all of our services for a whole year! </li>
+                            <li class="end-item"> $100 </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="button-div">
+                    <button><a href="./create-a-login.html">Sign Up</button>
+                </div>
+            </section>
         </div>
-
-        <div class="members_box">
-            <h3>Membership</h3>
-            <p>Full memebers are able to visit the gym at any time, and have acess to our unqiue workout sessions on our website.</p>
-        
-            <!-- LOGIN BUTTON-->
-            <div class="login-btn">
-                <a href="./login-page.html">
-                    <button type="button" >Login</button>
-                </a>
-            </div>
-
-        </div>
-
-            <br>
-        <h3>Subscription</h3>
-        <p>Not a member? No problem!</p>
-        <p>Gain access to our online content by subscribing. We have 2 subscription plans available:</p>
-
-        <div class="subs_tables" style="display: inline-block">
-            <table style="float: left">
-                <caption>Try us out</caption>
-                <tr>
-                <th>$10</th>
-                </tr>
-                <tr>
-                    <td>Join our community for one month, for only </td>
-                </tr>
-            </table>
-            <table style="float: left">
-                <caption>Most Popular!</caption>
-                <tr>
-                <th>$100</th>
-                </tr>
-                <tr>
-                    <td>Become part of the family, and subscribe for 1 year</td>
-                </tr>
-            </table>
-        </div>
-
-         <!-- SIGNUP BUTTON-->
-         <div class="signup-btn">
-            <a href="./create-a-login.html">
-                Don&#39t have an account? Signup here...
-            </a>
-        </div>
-
     </body>
 </html>
